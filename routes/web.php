@@ -17,10 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify'=>true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::namespace('App\Http\Controllers')->middleware('auth')->group(function(){
+
+Route::namespace('App\Http\Controllers')->middleware('auth','verified')->group(function(){
     Route::resource('/articles','ArticlesController',['except'=>['show','index']]);
 });
 
