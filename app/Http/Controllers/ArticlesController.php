@@ -25,7 +25,7 @@ class ArticlesController extends Controller
             'user_id' => $user->id
         ];
         $article = Articles::create($article_data);
-        if($article->save()){
+        if($article){
             $request->session()->flash('success', 'Article has been created successfully!');
         }
         else{
