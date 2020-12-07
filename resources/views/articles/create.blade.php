@@ -18,7 +18,10 @@
                             </div>
                             <div class="form-group">
                                 <label for="status">Status</label>
-                                <textarea class="form-control" name="status" id="status" rows="3" required></textarea>
+                                <select class="form-control" id="status" name="status">
+                                    <option>Publish</option>
+                                    <option>Pending</option>
+                                </select>
                             </div>
                             <button type="submit" class="btn btn-outline-primary">Post</button>
                         </form>

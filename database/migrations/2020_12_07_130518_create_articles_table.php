@@ -17,7 +17,7 @@ class CreateArticlesTable extends Migration
             $table->id();
             $table->integer('user_id');
             $table->string('title');
-            $table->string('status');
+            $table->string('status',15);
             $table->timestamp('publish_date')->useCurrent();
         });
     }

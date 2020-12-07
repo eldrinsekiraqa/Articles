@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::namespace('App\Http\Controllers')->middleware('auth')->group(function(){
-    Route::resource('/articles','ArticlesController',['except'=>['show']]);
+    Route::resource('/articles','ArticlesController',['except'=>['show','index']]);
 });
 
 
