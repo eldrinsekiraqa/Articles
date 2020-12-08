@@ -15,6 +15,7 @@ class ArticlesController extends Controller
     public function store(Request $request){
         $validatedData = $request->validate([
             'title' => 'string|required',
+            'content'=>'string|required|max:50000',
             'status' =>'string|required|max:15'
         ]);
 
@@ -22,6 +23,7 @@ class ArticlesController extends Controller
         $article_data = [
             'title' => $request->input('title'),
             'status' => $request->input('status'),
+            'content' => $request->input('content'),
             'user_id' => $user->id
         ];
         $article = Articles::create($article_data);
