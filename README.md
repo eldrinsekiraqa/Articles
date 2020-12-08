@@ -20,7 +20,7 @@ Cloning the Repository from Github :
 
 - Composer install
 - Create a Database
-- Create an env file and configure it
+- Create an env file and configure it ( Mailtrap configuration and Database connection ) 
 - Run : php artisan key:generate
 - Run : php artisan migrate
 - Run : php artisan serve
