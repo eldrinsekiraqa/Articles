@@ -17,6 +17,10 @@
                                 <input type="text" name="title" class="form-control" id="title" placeholder="Article Title" required>
                             </div>
                             <div class="form-group">
+                                <label for="content">Content</label>
+                                <textarea class="form-control" name="content" id="content" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
                                 <label for="status">Status</label>
                                 <select class="form-control" id="status" name="status">
                                     <option>Publish</option>

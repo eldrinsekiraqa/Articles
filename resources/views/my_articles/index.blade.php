@@ -16,6 +16,8 @@
                                     <h6 class="card-subtitle mb-2 text-muted">{{$article->publish_date}}</h6>
                                     <h5 class="card-subtitle mb-2 text-muted">Article Title</h5>
                                     <h5 class="card-title">{{$article->title}}</h5>
+                                    <h5 class="card-subtitle mb-2 text-muted">Article Content</h5>
+                                    <h5 class="card-title">{{$article->content}}</h5>
                                     <div class="btn-group">
                                     <form onsubmit="return confirm('{{__("Are your sure to delete this Article?")}}')"
                                           method="POST" action="{{route('my_articles.destroy',$article->id)}}">

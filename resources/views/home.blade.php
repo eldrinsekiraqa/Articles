@@ -17,6 +17,8 @@
                             <h6 class="card-subtitle mb-2 text-muted">{{$article->publish_date}}</h6>
                             <h5 class="card-subtitle mb-2 text-muted">Article Title</h5>
                             <h5 class="card-title">{{$article->title}}</h5>
+                            <h5 class="card-subtitle mb-2 text-muted">Article Content</h5>
+                            <h5 class="card-title">{{$article->content}}</h5>
                         </div>
                     </div>
                 </div>
