@@ -29,7 +29,7 @@ class ArticlesController extends Controller
             $request->session()->flash('success', 'Article has been created successfully!');
         }
         else{
-            $request->session()->flash('error', 'There is an error postin this Article!');
+            $request->session()->flash('error', 'There is an error posting this Article!');
         }
 
         return redirect()->route("home");

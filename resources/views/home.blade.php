@@ -11,12 +11,12 @@
                 </div>
                 @foreach($articles as $article)
                 <div class="card-body align-center">
-                    <div class="card" style="width: 40rem;">
+                    <div class="card">
                         <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Article Title</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">{{$article->user->name}}</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">{{$article->publish_date}}</h6>
+                            <h5 class="card-subtitle mb-2 text-muted">Article Title</h5>
                             <h5 class="card-title">{{$article->title}}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Published from : {{$article->user->name}}</h6>
-                            <h6 class="card-subtitle mb-2 text-muted">Published at : {{$article->publish_date}}</h6>
                         </div>
                     </div>
                 </div>
